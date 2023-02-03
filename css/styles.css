@@ -1,4 +1,4 @@
-/*---------------------------Sections--------------------------*/
+/*---------------------------Main Rules--------------------------*/
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -28,39 +28,8 @@ th{
     background-color: white;
 }
 
-/*---------------------------Classes---------------------------*/
-/* Heading */
-.big-heading{
-    font-weight: bold;
-    font-size: 3.25rem !important;
-    line-height: 1.5;
-}
-
-.subtitle-text{
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-.features-title{
-    font-weight: 900;
-}
-
-.compare-plans-table{
-    width: 25%;
-}
-
-.price-card-title, .primary-price-card-title{
-    font-weight: bold;
-}
-
-.primary-price-card-title{
-    color: white
-}
-
-.container{
-    padding: 3% 15% 7%;
-}
-
+/*---------------------------Classes and ID's---------------------------*/
+/* ------Navbar------ */
 .navbar {
     padding: 0 0 4.5rem 35px;
     margin-bottom: 1000px;
@@ -83,12 +52,50 @@ th{
     font-weight: 'Montserrat', sans-serif;
 }
 
+#title{
+    background-color: #ff4c68;
+}
+
+/* ------Heading------ */
+.big-heading{
+    font-weight: bold;
+    font-size: 3.25rem !important;
+    line-height: 1.5;
+}
+
+.container{
+    padding: 3% 15% 7%;
+}
+
 .download-buttons{
     margin: 5% 3% 5% 0;
 }
 
 .download-buttons-cta{
     margin: 1.5% 0;
+}
+
+#container-intro{
+    text-align: left;
+    padding-top: 75px;
+    background-color: #ff4c68;
+}
+
+#iphone-dog{
+    margin-left: 15%;
+    transform: rotate(20deg);
+    position: absolute;
+    width: 55%;
+    padding-top: 80px;
+}
+
+#div-iphone-dog{
+    position: relative;
+}
+
+/* ------Features------ */
+.features-title{
+    font-weight: 900;
 }
 
 .feature-box{
@@ -103,6 +110,75 @@ th{
 
 .icons:hover{
     color: #ff4c68;
+}
+
+#features{
+    padding: 7% 20%;
+    background-color: white;
+    /* Siempre que se usa z index, es obligatorio que la position no sea static */
+    position: relative;
+}
+
+/* -----Testimonials----- */
+#testimonials{
+    text-align: center;
+}
+
+#press{
+    text-align: center;
+    margin-top: -5%;
+    padding-bottom: 3%;
+}
+
+/* ------Pricing------ */
+/* Pricing Cards */
+.price-card-title, .primary-price-card-title{
+    font-weight: bold;
+}
+
+.primary-price-card-title{
+    color: white
+}
+
+.subtitle-text{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.card-primary-price, .card-secondary-price{
+    border-color: #c8c8c8 !important;
+}
+
+.card-primary-price:hover{
+    border-color: #ff4c68 !important;
+}
+
+.text-bg-primary-price{
+    background-color: #ff4c68 !important;
+}
+
+.card-secondary-price:hover{
+    border-color: #d87669 !important;
+}
+
+#pricing{
+    margin-top: 55px;
+    text-align: center;
+}
+
+#price-cards{
+    margin: 20px 2.5%;
+}
+
+#primary-price-card-subtitle{
+    color: #d0cccc;
+    font-weight:bold;
+    font-size: 0.8rem;
+}
+
+/* Compare Plans */
+.compare-plans-table{
+    width: 25%;
 }
 
 .press-logo{
@@ -141,86 +217,17 @@ th{
     color: white !important;
 }
 
-.card-primary-price, .card-secondary-price{
-    border-color: #c8c8c8 !important;
-}
-
-.card-primary-price:hover{
-    border-color: #ff4c68 !important;
-}
-
-.text-bg-primary-price{
-    background-color: #ff4c68 !important;
-}
-
-.card-secondary-price:hover{
-    border-color: #d87669 !important;
-}
-
-/*-----------------------------IDs-----------------------------*/
-#title{
-    background-color: #ff4c68;
-}
-
-#container-intro{
-    text-align: left;
-    padding-top: 75px;
-    background-color: #ff4c68;
-}
-
-#features{
-    padding: 7% 20%;
-    background-color: white;
-    /* Siempre que se usa z index, es obligatorio que la position no sea static */
-    position: relative;
-}
-
-#iphone-dog{
-    margin-left: 15%;
-    transform: rotate(20deg);
-    position: absolute;
-    width: 55%;
-    padding-top: 80px;
-}
-
-#div-iphone-dog{
-    position: relative;
-}
-
-#testimonials{
-    text-align: center;
-}
-
-#pricing{
-    margin-top: 55px;
-    text-align: center;
-}
-
-#press{
-    text-align: center;
-    margin-top: -5%;
-    padding-bottom: 3%;
-}
-
-#price-cards{
-    margin: 20px 2.5%;
-}
-
-#primary-price-card-subtitle{
-    color: #d0cccc;
-    font-weight:bold;
-    font-size: 0.8rem;
-}
-
 #compare-plans{
     margin: 20px 10%;
 }
 
+/* -----CTA----- */
 #cta{
     text-align: center;
     padding: 5% 0;
 }
 
+/* -----Footer----- */
 #footer{
     background-color:  #eee7e7;
     padding: 0;
