@@ -3,28 +3,12 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-/*-------------------------Subsections-------------------------*/
-h1{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: bold;
-    font-size: 3.25rem !important;
-    line-height: 1.5;
-}
-
 h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 3rem;
 }
 
-h3{
+h1, h3, h4, h5, h6{
     font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: 900;
-}
-
-h4{
-    font-family: 'Montserrat Alternates', sans-serif;
-    font-weight: bold;
 }
 
 p{
@@ -35,30 +19,46 @@ th{
     color: #8f8f8f;
 }
 
-.a-icons{
-    color: #ef8172;
-    margin-bottom: 1.5rem;
+.colored-section{
+    color: white;
+    background-color: #ef8172;
 }
 
-.a-icons:hover{
-    color: #ff4c68;
-}
-
-nav{
-    background-color: #ff4c68;
+.white-section{
+    background-color: white;
 }
 
 /*---------------------------Classes---------------------------*/
-.container{
-    padding: 3% 15% 7%;
+/* Heading */
+.big-heading{
+    font-weight: bold;
+    font-size: 3.25rem !important;
+    line-height: 1.5;
 }
 
-.iphone-dog{
-    margin-left: 15%;
-    transform: rotate(20deg);
-    position: absolute;
-    width: 55%;
-    padding-top: 80px;
+.subtitle-text{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.features-title{
+    font-weight: 900;
+}
+
+.compare-plans-table{
+    width: 25%;
+}
+
+.price-card-title, .primary-price-card-title{
+    font-weight: bold;
+}
+
+.primary-price-card-title{
+    color: white
+}
+
+.container{
+    padding: 3% 15% 7%;
 }
 
 .navbar {
@@ -80,7 +80,7 @@ nav{
 
 .nav-link{
     font-size: 1.2rem;
-    font-weight: 'Montserrat';
+    font-weight: 'Montserrat', sans-serif;
 }
 
 .download-buttons{
@@ -130,23 +130,18 @@ nav{
     border-color: #d94057 !important;
 }
 
-.btn-outline-primary-price {
+.btn-outline-secondary-price {
     border-color: #ef8172!important;
     color: #ef8172 !important;
 }
 
-
-.btn-outline-primary-price:hover{
+.btn-outline-secondary-price:hover{
     background-color: #d87669 !important;
     border-color: #d87669 !important;
     color: white !important;
 }
 
-.card:hover{
-    border-color: #d87669 !important;
-}
-
-.card-primary-price{
+.card-primary-price, .card-secondary-price{
     border-color: #c8c8c8 !important;
 }
 
@@ -158,21 +153,19 @@ nav{
     background-color: #ff4c68 !important;
 }
 
-/* .btn-bd-primary{
-    --bs-btn-bg: var(#ef8172);
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-border-color: var(#ef8172);
+.card-secondary-price:hover{
+    border-color: #d87669 !important;
 }
-.btn-bd-primary:hover{
-    --bs-btn-bg: var(#ff4c68);
-    --bs-btn-color: var(--bs-white);
-    --bs-btn-border-color: var(#ff4c68);
-} */
 
 /*-----------------------------IDs-----------------------------*/
 #title{
     background-color: #ff4c68;
-    color: #ffffff;
+}
+
+#container-intro{
+    text-align: left;
+    padding-top: 75px;
+    background-color: #ff4c68;
 }
 
 #features{
@@ -182,10 +175,20 @@ nav{
     position: relative;
 }
 
+#iphone-dog{
+    margin-left: 15%;
+    transform: rotate(20deg);
+    position: absolute;
+    width: 55%;
+    padding-top: 80px;
+}
+
+#div-iphone-dog{
+    position: relative;
+}
+
 #testimonials{
     text-align: center;
-    background-color: #ef8172;
-    color: #ffffff;
 }
 
 #pricing{
@@ -194,7 +197,6 @@ nav{
 }
 
 #press{
-    background-color: #ef8172;
     text-align: center;
     margin-top: -5%;
     padding-bottom: 3%;
@@ -204,41 +206,45 @@ nav{
     margin: 20px 2.5%;
 }
 
+#primary-price-card-subtitle{
+    color: #d0cccc;
+    font-weight:bold;
+    font-size: 0.8rem;
+}
+
 #compare-plans{
     margin: 20px 10%;
 }
 
 #cta{
     text-align: center;
-    background-color: #ef8172;
-    color: #ffffff;
     padding: 5% 0;
 }
 
 #footer{
     background-color:  #eee7e7;
-    padding: 20px 0 5px;
+    padding: 0;
+    height: 120px;
     text-align: center;
     font-size: 0.75rem;
 }
 
-#container-intro{
-    text-align: left;
-    padding-top: 75px;
+#footer-container{
+    width: 55%;
+    height: 50px;
+    padding: 25px 0 0;
+    margin: auto;
 }
 
 /*--------------------------Media Querys--------------------------*/
 
 @media (max-width: 991px){
-    h1{
-        font-family: 'Montserrat Alternates', sans-serif;
-        font-weight: bold;
+    .big-heading{
         font-size: 2.5rem !important;
-        line-height: 1.5;
         text-align: center;
     }
 
-    .iphone-dog{
+    #iphone-dog{
         margin: 0 32%;
         transform: rotate(0deg);
         position: static;
