@@ -147,6 +147,10 @@ nav{
 }
 
 .card-primary-price{
+    border-color: #c8c8c8 !important;
+}
+
+.card-primary-price:hover{
     border-color: #ff4c68 !important;
 }
 
