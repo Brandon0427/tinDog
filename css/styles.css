@@ -1,0 +1,246 @@
+/*---------------------------Sections--------------------------*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*-------------------------Subsections-------------------------*/
+h1{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    font-size: 3.25rem !important;
+    line-height: 1.5;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 900;
+}
+
+h4{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+p{
+    color: #8f8f8f;
+}
+
+th{
+    color: #8f8f8f;
+}
+
+.a-icons{
+    color: #ef8172;
+    margin-bottom: 1.5rem;
+}
+
+.a-icons:hover{
+    color: #ff4c68;
+}
+
+nav{
+    background-color: #ff4c68;
+}
+
+/*---------------------------Classes---------------------------*/
+.container{
+    padding: 3% 15% 7%;
+}
+
+.iphone-dog{
+    margin-left: 15%;
+    transform: rotate(20deg);
+    position: absolute;
+    width: 55%;
+    padding-top: 80px;
+}
+
+.navbar {
+    padding: 0 0 4.5rem 35px;
+    margin-bottom: 1000px;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem !important;
+    font-weight: bold;
+    padding-left: 2.5%;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 'Montserrat';
+}
+
+.download-buttons{
+    margin: 5% 3% 5% 0;
+}
+
+.download-buttons-cta{
+    margin: 1.5% 0;
+}
+
+.feature-box{
+    text-align: center;
+    padding: 5%;
+}
+
+.icons{
+    color: #ef8172;
+    margin-bottom: 1.5rem;
+}
+
+.icons:hover{
+    color: #ff4c68;
+}
+
+.press-logo{
+    width: 15%;
+    margin: 20px 20px 35px;
+}
+
+.testimonial-image{
+    border-radius: 100%; 
+    width: 25%; 
+    margin: 20px;
+}
+
+.carousel-item{
+    padding: 7% 20%;
+}
+
+.btn-primary-price {
+    background-color: #ff4c68 !important;
+    border-color: #ff4c68 !important;
+}
+
+.btn-primary-price:hover{
+    background-color: #d94057 !important;
+    border-color: #d94057 !important;
+}
+
+.btn-outline-primary-price {
+    border-color: #ef8172!important;
+    color: #ef8172 !important;
+}
+
+
+.btn-outline-primary-price:hover{
+    background-color: #d87669 !important;
+    border-color: #d87669 !important;
+    color: white !important;
+}
+
+.card:hover{
+    border-color: #d87669 !important;
+}
+
+.card-primary-price{
+    border-color: #ff4c68 !important;
+}
+
+.text-bg-primary-price{
+    background-color: #ff4c68 !important;
+}
+
+/* .btn-bd-primary{
+    --bs-btn-bg: var(#ef8172);
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-border-color: var(#ef8172);
+}
+.btn-bd-primary:hover{
+    --bs-btn-bg: var(#ff4c68);
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-border-color: var(#ff4c68);
+} */
+
+/*-----------------------------IDs-----------------------------*/
+#title{
+    background-color: #ff4c68;
+    color: #ffffff;
+}
+
+#features{
+    padding: 7% 20%;
+    background-color: white;
+    /* Siempre que se usa z index, es obligatorio que la position no sea static */
+    position: relative;
+}
+
+#testimonials{
+    text-align: center;
+    background-color: #ef8172;
+    color: #ffffff;
+}
+
+#pricing{
+    margin-top: 55px;
+    text-align: center;
+}
+
+#press{
+    background-color: #ef8172;
+    text-align: center;
+    margin-top: -5%;
+    padding-bottom: 3%;
+}
+
+#price-cards{
+    margin: 20px 2.5%;
+}
+
+#compare-plans{
+    margin: 20px 10%;
+}
+
+#cta{
+    text-align: center;
+    background-color: #ef8172;
+    color: #ffffff;
+    padding: 5% 0;
+}
+
+#footer{
+    background-color:  #eee7e7;
+    padding: 20px 0 5px;
+    text-align: center;
+    font-size: 0.75rem;
+}
+
+#container-intro{
+    text-align: left;
+    padding-top: 75px;
+}
+
+/*--------------------------Media Querys--------------------------*/
+
+@media (max-width: 991px){
+    h1{
+        font-family: 'Montserrat Alternates', sans-serif;
+        font-weight: bold;
+        font-size: 2.5rem !important;;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    .iphone-dog{
+        margin: 0 32%;
+        transform: rotate(0deg);
+        position: static;
+        width: 35%;
+    }
+
+    #container-intro{
+        text-align: center;
+    }
+}
